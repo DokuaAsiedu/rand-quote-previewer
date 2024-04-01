@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import { quoteData } from "./config";
 import { randomHex } from "./utils";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
