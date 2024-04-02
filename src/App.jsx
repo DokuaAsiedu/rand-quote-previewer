@@ -4,6 +4,7 @@ import { randomHex } from "./utils";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { Credit } from "./components";
 
 function App() {
 	const [quote, setQuote] = useState(
@@ -21,7 +22,7 @@ function App() {
 	}, [col]);
 
 	return (
-		<div className="h-full min-h-screen min-w-[280px] py-12 flex flex-col items-center justify-center relative transition-colors ease-in-out duration-1000 text-xl">
+		<div className="h-full min-h-screen min-w-[280px] py-12 flex flex-col items-center justify-center gap-4 relative transition-colors ease-in-out duration-1000 text-xl">
 			<div className="w-11/12 sm:w-3/5 flex flex-col justify-between align-center gap-4 bg-white rounded-md p-8 transition-colors ease-in-out duration-1000">
 				<p
 					className="transition-colors ease-in-out duration-1000"
@@ -59,6 +60,7 @@ function App() {
 					</button>
 				</div>
 			</div>
+			<Credit />
 		</div>
 	);
 }
